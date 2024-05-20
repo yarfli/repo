@@ -1,2 +1,11 @@
 crypto example
 test
+
+import sys
+sys.path.insert(0, "/content/repo/python")
+from crypt import encrypt_string_user, decrypt_string_user
+
+# gAAAAABmS0KUdcjBPea2C2kLdzOMk5aoyXrT7hAwLTUFiy5zlAH7Mx0TyRRiTOZYb--jdBDHD-4iSOXY2-onWR_aO5qG0jfA6Q==
+# pass 1234
+
+decrypt_string_user()
