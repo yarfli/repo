@@ -30,6 +30,7 @@ def decrypt_string(encrypted_data, password):
             return "Incorrect password."
         else:
             return str(e)
+
 def encrypt_string_user():
   input_string = input("Enter the string to encrypt: ")
   password = getpass.getpass("Enter your password: ")
@@ -39,3 +40,11 @@ def decrypt_string_user():
   input_string = input("Enter the string to decrypt: ")
   password = getpass.getpass("Enter your password: ")
   return decrypt_string(input_string,password)
+
+def encrypt_string_user_pass(mystr):  
+  password = getpass.getpass("Enter your password: ")
+  return encrypt_string(mystr,password)
+  
+def decrypt_string_user_pass(mystr):  
+  password = getpass.getpass("Enter your password: ")
+  return decrypt_string(mystr,password)  
